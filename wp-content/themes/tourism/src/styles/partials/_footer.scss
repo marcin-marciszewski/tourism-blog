@@ -1,0 +1,32 @@
+// Footer
+footer{
+    background-color: $primary;
+    .logo--white{
+        img{
+            width: 125px;
+            margin-top: 45px;
+            margin-bottom: 25px;
+        }
+    }
+    .footer-links,.footer-social{
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin: 15px auto;
+        justify-content:center;
+        li{
+            margin: 0 50px;
+            a{
+                text-decoration: none;
+                color: white;
+                white-space: nowrap;
+            }
+        }
+    }
+    .footer-social{
+        margin-bottom: 10px;
+        li{
+            margin: 0 20px;
+        }
+    }
+}

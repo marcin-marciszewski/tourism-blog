@@ -41,5 +41,6 @@ module.exports = {
             filename: "[name].css",
             
         })
-    ]
+    ],
+    watch: true
 }

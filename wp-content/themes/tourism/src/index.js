@@ -2,9 +2,7 @@ import './styles/main.scss';
 $ = jQuery;
 
 $(document).ready(function(){
-    console.log("obfdgject");
     $("#current-year").html(new Date().getFullYear());
-        
     }
 );
 

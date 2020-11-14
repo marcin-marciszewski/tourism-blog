@@ -1,0 +1,22 @@
+.sidebar-wrapper{
+    margin-top: 40px;
+    input{
+        max-width: 100%;
+    }
+    .widget.widget_search{
+        margin-bottom: 20px;
+        input[type='submit']{
+            margin: 10px 0;
+        }
+    }
+    .wp-calendar-table{
+        width: 100%;
+    }
+    .wp-calendar-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    label.screen-reader-text{
+        font-weight: 500;
+    }
+}
