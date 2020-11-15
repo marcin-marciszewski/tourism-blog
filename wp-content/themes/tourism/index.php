@@ -3,6 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 posts-container">
+                <div class="top-advert">
+                    <?php 
+                        if(function_exists('quads_ad')){
+                            quads_ad(['location' => 'tourism_header']);
+                        }
+                    ?>
+                </div>
                 <?php 
                 if(have_posts()){
                     while(have_posts()){
