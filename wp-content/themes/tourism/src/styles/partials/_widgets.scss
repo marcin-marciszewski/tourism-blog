@@ -1,0 +1,14 @@
+.widget.widget_archive{
+    ul{
+        list-style: none;
+        li a {
+           @include link-dec;
+        }
+    }
+}
+
+.calendar_wrap{
+    a {
+        @include link-dec;
+    }
+}
