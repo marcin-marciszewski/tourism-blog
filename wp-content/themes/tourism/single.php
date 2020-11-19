@@ -13,8 +13,7 @@
                         $author_URL = get_author_posts_url($author_ID);
                     }
                     ?>
-                        <div class="single-post">
-                            <div class="single-post__title">
+                        <div id="post-<?php the_ID(); ?>" <?php post_class('single-post') ?>>
                                 <h2><?php the_title(); ?></h2>
                             </div>
                             <div class="single-post__image">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="<?php bloginfo('charset')?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <?php wp_head(); ?>
         <title>Travel Blog</title>
@@ -9,8 +9,8 @@
 <body id="home" <?php body_class(); ?>>
     <header class="showcase">
         <nav class="navbar ">
-            <a class="logo logo--white" href="#"><img src="<?php echo get_template_directory_uri() . '/src/assets/images/logo-white.png';?>" alt=""></a>
-            <a class="logo logo--black" href="#"><img src="<?php echo get_template_directory_uri() . '/src/assets/images/logo.png';?>" alt=""></a>
+            <a class="logo logo--white" href="<?php echo get_home_url()?>"><img src="<?php echo get_template_directory_uri() . '/src/assets/images/logo-white.png';?>" alt=""></a>
+            <a class="logo logo--black" href="<?php echo get_home_url()?>"><img src="<?php echo get_template_directory_uri() . '/src/assets/images/logo.png';?>" alt=""></a>
             <?php 
             if(has_nav_menu('primary')){
                 wp_nav_menu([
