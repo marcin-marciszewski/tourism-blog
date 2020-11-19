@@ -37,4 +37,47 @@
         }
         
     }
+    #popular-posts__header{
+        color: red;
+    }
+    .popular-posts{
+        position: relative;
+        &__item{
+            @include link-dec;
+            position: absolute;
+            display: block;
+	        top: -40px;
+            width: 100%;
+            font-size: 24px;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            &:first-child{
+                animation-name: anim-1;
+            }
+            &:nth-child(2){
+                animation-name: anim-2;
+            }
+            &:nth-child(3){
+                animation-name: anim-3;
+            }
+            @keyframes anim-1 {
+              0%, 8.3% { left: 20%; opacity: 0; }
+              8.3%,25% { left: 30%; opacity: 1; }
+              33.33%, 100% { left: 110%; opacity: 0; }
+            }
+            
+            @keyframes anim-2 {
+              0%, 33.33% { left: 20%; opacity: 0; }
+              41.63%, 58.29% { left: 30%; opacity: 1; }
+              66.66%, 100% { left: 110%; opacity: 0; }
+            }
+            
+            @keyframes anim-3 {
+              0%, 66.66% { left: 20%; opacity: 0; }
+              74.96%, 91.62% { left: 30%; opacity: 1; }
+              100% { left: 110%; opacity: 0; }
+            }
+        }
+    }
 }

@@ -20,4 +20,3 @@ window.addEventListener("scroll", function(){
         logoBlack.style.display = "none";
     }
 });
-
