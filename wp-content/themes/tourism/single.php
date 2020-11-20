@@ -2,7 +2,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col col-md-9">
+            <div class="col-md-9">
                 <?php 
                 if(have_posts()){
                     while(have_posts()){
@@ -15,7 +15,6 @@
                     ?>
                         <div id="post-<?php the_ID(); ?>" <?php post_class('single-post') ?>>
                                 <h2><?php the_title(); ?></h2>
-                            </div>
                             <div class="single-post__image">
                                 <?php   if(has_post_thumbnail()){
                                     the_post_thumbnail('full');

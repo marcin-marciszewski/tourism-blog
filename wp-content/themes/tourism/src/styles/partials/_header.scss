@@ -55,6 +55,7 @@
 }
 
 .showcase{
+    margin-bottom: 5%;
     position: relative;
     background:{ 
         image: url(../assets/images/landingpage.jpg);
@@ -121,8 +122,8 @@
     i{
         color: white;
         animation: moveDown 1.5s ease infinite;
-        font-size: 10px;
+        font-size: 13px;
         position: relative;
-        left: 1.3px;
+        left: -0.4px;
     }
 }
