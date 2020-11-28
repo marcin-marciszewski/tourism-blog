@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <?php 
+                <?php                
                 if(!is_single() && is_home() && function_exists('wpp_get_mostpopular')){
                     wpp_get_mostpopular([
                         'limit' => 3,
